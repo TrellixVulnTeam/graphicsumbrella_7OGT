@@ -98,6 +98,16 @@ li {
   list-style-type: none;
 }
 
+/* for fonts  */
+
+.dark-text {
+  font-weight: bold;
+}
+
+.green-color {
+  color: #8EB53E;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1519px;
@@ -109,11 +119,29 @@ li {
 =================================*/
 header .wrapper {
   width: 57%;
-  padding: 31px 0;
+  padding: 30px 0 20px 0;
   position: relative;
   display: flex;
   align-items: center;
 }
+
+.hamburger,
+.cross {
+  display: none;
+  text-indent: -9999px; 
+}
+.hamburger::before,
+.cross::before {
+  content: "\f0c9";
+  float: right;
+  color: #000;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+.cross::before {
+  content: "\f00d";
+}
+
 
 .menus {
   margin-left: auto;
@@ -127,7 +155,7 @@ header .wrapper {
 
 .menus ul li a {
   color: #000;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .menus ul li a:hover {
@@ -148,6 +176,11 @@ header .wrapper {
 =================================*/
 
 /* slider section start  */
+
+.slider {
+  padding: 30px 0;
+  background-color: #A0C63F;
+}
 
 .slider .wrapper {
   position: relative;
@@ -190,7 +223,7 @@ header .wrapper {
 }
 
 .elegantica-icon {
-  padding-top: 184px;
+  padding-top: 218px;
   position: relative;
   flex-basis: 17%;
 }
@@ -198,9 +231,10 @@ header .wrapper {
 .website-icons span {
   display: block;
   text-align: center;
+  letter-spacing: 1px;
 }
-.icon {
-  padding: 20px;
+.elegantica-icon .icon {
+  padding: 28px 20px;
   position: absolute;
   bottom: 62px;
   background-color: #8EB540;
@@ -210,14 +244,29 @@ header .wrapper {
   text-indent: -9999px;
 }
 
-.icon::before {
+.elegantica-icon .icon::before {
   content: "\f260";
   float: right;
   display: block;
   color: #fff;
   font-family: "fontAwesome";
-  font-size: 73px;
+  font-size: 89px;
   text-indent: 0;
+}
+
+.elegantica-icon:nth-child(2) .icon::before {
+  content: "\f095";
+  padding: 0 17px;
+}
+
+.elegantica-icon:nth-child(3) .icon::before {
+  content: "\f013";
+  padding: 0 13px;
+}
+
+.elegantica-icon:nth-child(4) .icon::before {
+  content: "\f10b";
+  padding: 0 33px;
 }
 
 .icon-big-font {
@@ -238,11 +287,214 @@ header .wrapper {
 
 .recent-from-portfolio h2{
   margin-left: 31px;
-  font-size: 21px;
+  font-size: 22px;
+}
+
+.portfolio {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 7px;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-basis: 48.4%;
+}
+
+.portfolio-content figure {
+  width: 232px;
+  height: 135px;
+}
+
+.portfolio-info {
+  padding: 15px;
+  flex-basis: 49%;
+}
+
+.portfolio-info h3 {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.portfolio-info a {
+  padding: 2px 11px;
+  background-color: #90B045;
+  color: #fff;
+  font-size: 11px;
+}
+
+.portfolio-info p {
+  margin-top: 10px;
+  font-size: 11px;
+  line-height: 18px;
 }
 
 /* recent from portfolio section end  */
 
+/* adverstisers and contact section start  */
+
+.advertisers-and-contact .wrapper {
+  width: 57%;
+  padding: 16px 0 0 0;
+}
+
+.our-major-advertisers h2 {
+  margin-left: 31px;
+  font-size: 21px;
+}
+
+.advertisers {
+  margin-top: 32px;
+  display: flex;
+}
+
+.advertisers figure{
+  width: 147px;
+  height: 118px;
+}
+
+.move-up {
+  padding: 8px 13px;
+  margin: 5.5% 0 0 96.2%;
+  text-indent: -9999px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #90B045;
+  color: #fff;
+}
+
+.move-up::before {
+  content: "\f106";
+  float: right;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+
+.about-contact {
+  padding: 44px 0 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-contact > div {
+  flex-basis: 21%;
+}
+
+.about-us p {
+  margin: 15px 0 17px 0;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.about-us ul {
+  width: 80%;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us ul li a {
+  font-size: 18px;
+  text-indent: -9999px;
+}
+
+.about-us ul li a::before {
+  content: "\f09a";
+  float: right;
+  color: #DCDCDC;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+
+.about-us ul li:nth-child(2) a:before {
+  content: "\f099";
+}
+
+.about-us ul li:nth-child(3) a:before {
+  content: "\f09e";
+}
+
+.about-us ul li:nth-child(4) a:before {
+  content: "\f27d";
+}
+
+.about-us ul li:nth-child(5) a:before {
+  content: "\f17d";
+}
+
+.about-us ul li:nth-child(6) a:before {
+  content: "\f1a6";
+}
+
+.archieves ul,.contact-us ul {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.archieves ul li {
+  padding: 8.7px 0;
+  border-bottom: 1px dotted #000;
+}
+
+.archieves ul li a ,.contact-us ul li a{
+  color: #7A7A7A;
+  font-size: 11px;
+}
+
+.archieves ul li:last-child  {
+  border: none;
+}
+
+.contact-us ul li {
+  padding: 8px 0 17px 0;
+}
+
+.contact-us ul li a::before {
+  content: "\f003";
+  margin-right: 10px;
+  color: #ACACAC;
+  font-size: 23px;
+  font-family: "fontAwesome";
+}
+
+.contact-us ul li:nth-child(2) a:before {
+  content: "\f095";
+}
+
+.contact-us ul li:nth-child(3) a:before {
+  content: "\f10b";
+  font-size: 34px;
+}
+
+.sign-to-newsletter form {
+  margin-top: 20px;
+}
+
+input[type="text"],input[type="email"] {
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  margin-bottom: 9px;
+  border: none;
+  border-bottom: 1px solid #ACACAC;
+  background-color: #FAFAFA;
+  color: #7A7A7A;
+  font-size: 11px;
+  font-style: italic;
+}
+
+input[type="submit"] {
+  padding: 13px 15px;
+  margin-left: 60%;
+  margin-top: 9px;
+  border: none;
+  background-color: #90B045;
+  color: #fff;
+  font-size: 10px;
+}
+/* adverstisers and contact section end   */
 /*=================================
   main styling ends here
 =================================*/
@@ -251,8 +503,35 @@ header .wrapper {
   footer styling starts here
 =================================*/ 
 
+footer {
+  padding: 3px 0;
+  background-color: #000;
+  color: #fff;
+}
 
+footer .wrapper {
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  flex-basis: 25.6%;
+  justify-content: space-between;
+}
 
+footer ul li a {
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.copyrights {
+  flex-basis: 14.2%;
+  font-size: 9px;
+}
 
 
 
