@@ -147,12 +147,101 @@ header .wrapper {
   main styling starts here
 =================================*/
 
+/* slider section start  */
 
+.slider .wrapper {
+  position: relative;
+}
 
+.slider-list li:nth-child(2),.slider-list li:nth-child(3) {
+  display: none;
+}
 
+.slider figure {
+  width: 534px;
+  margin-left: 44.5%;
+}
 
+.left-button,.right-button,.slider h2 {
+  position: absolute;
+  display: none;
+}
 
+/* slider section end  */
 
+/* business theme section start  */
+
+.business-theme .wrapper {
+  width: 57%;
+  padding: 30px 0;
+}
+
+.business-theme .wrapper h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.website-icons {
+  margin-top: 29px;
+  justify-content: space-between;
+  text-align: center;
+  border-top: 1px solid #000;
+  display: flex;
+}
+
+.elegantica-icon {
+  padding-top: 184px;
+  position: relative;
+  flex-basis: 17%;
+}
+
+.website-icons span {
+  display: block;
+  text-align: center;
+}
+.icon {
+  padding: 20px;
+  position: absolute;
+  bottom: 62px;
+  background-color: #8EB540;
+  border-radius: 100%;
+  border: 10px solid#fff;
+  outline: 1px solid #000;
+  text-indent: -9999px;
+}
+
+.icon::before {
+  content: "\f260";
+  float: right;
+  display: block;
+  color: #fff;
+  font-family: "fontAwesome";
+  font-size: 73px;
+  text-indent: 0;
+}
+
+.icon-big-font {
+  font-size: 26px;
+}
+
+.icon-small-font {
+  font-size: 15px;
+}
+
+/* business theme section end  */
+/* recent from portfolio section start  */
+
+.recent-from-portfolio .wrapper {
+  width: 57%;
+  padding: 15px 0;
+}
+
+.recent-from-portfolio h2{
+  margin-left: 31px;
+  font-size: 21px;
+}
+
+/* recent from portfolio section end  */
 
 /*=================================
   main styling ends here
