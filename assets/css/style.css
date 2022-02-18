@@ -164,7 +164,17 @@ header .wrapper {
 
 .pull-me {
   position: absolute;
-  display: none;
+  right: 0;
+  top: -7px;
+  font-size: 9.5px;
+}
+
+.pull-me::after {
+  content: "\f02e";
+  margin-left: 8px;
+  font-family: "fontAwesome";
+  font-size: 19px;
+  color: #A0C63F;
 }
 
 /*=================================
@@ -197,7 +207,31 @@ header .wrapper {
 
 .left-button,.right-button,.slider h2 {
   position: absolute;
-  display: none;
+}
+
+.left-button,.right-button {
+  padding: 5px 15px;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  display: inline-block;
+  text-indent: -9999px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-button::before,.right-button::before {
+  content: "\f104";
+  font-family: "fontAwesome";
+  float: right;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-indent: 0;
+}
+
+.right-button {
+  content: "\f105";
+  right: 0;
 }
 
 /* slider section end  */
