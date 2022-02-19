@@ -111,7 +111,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1519px;
-  width: 88.2%; 
+  width: 88%; 
   margin: 0 auto;
 }
 /*=================================
@@ -209,14 +209,25 @@ header .wrapper {
   position: absolute;
 }
 
+.slider h2 {
+  width: 30%;
+  top: 12.5%;
+  left: 55.3%;
+  font-size: 27px;
+}
+
 .left-button,.right-button {
-  padding: 5px 15px;
-  border: 5px solid #fff;
+  padding: 6px 16px;
+  border: 6px solid #fff;
   border-radius: 100%;
   display: inline-block;
   text-indent: -9999px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-64%);
+}
+
+.right-button {
+  right: 0;
 }
 
 .left-button::before,.right-button::before {
@@ -229,9 +240,8 @@ header .wrapper {
   text-indent: 0;
 }
 
-.right-button {
+.right-button::before {
   content: "\f105";
-  right: 0;
 }
 
 /* slider section end  */
