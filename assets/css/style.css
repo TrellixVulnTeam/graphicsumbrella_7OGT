@@ -276,7 +276,7 @@ header .wrapper {
   margin-top: 29px;
   justify-content: space-between;
   text-align: center;
-  border-top: 1px solid #000;
+  border-top: 1px dotted #CCCCCC;
   display: flex;
 }
 
@@ -361,7 +361,7 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 7px;
+  row-gap: 12px;
 }
 
 .portfolio-content {
@@ -678,6 +678,14 @@ footer ul li a:hover {
     width: 100%;
   }
 
+  .about-us p {
+    margin-top: 34px;
+  }
+
+  .sign-to-newsletter h3 {
+    white-space: nowrap;
+  }
+
   .about-contact > div:nth-child(2) h3,.about-contact > div:nth-child(3) h3 {
     margin-bottom: 25px;
   }
@@ -803,9 +811,13 @@ footer ul {
     row-gap: 10px;
   }
 
+  .slider figure {
+    width: auto;
+  }
+
+  .portfolio {
+    justify-content: center;
+  }
+
 }
 
-/* media query for 480px starts here*/ 
- @media only screen and (max-width: 480px){
-  
-}
