@@ -118,7 +118,7 @@ li {
   Header styling starts here
 =================================*/
 header .wrapper {
-  width: 57%;
+  width: 57.2%;
   padding: 30px 0 20px 0;
   position: relative;
   display: flex;
@@ -175,6 +175,7 @@ header .wrapper {
   font-family: "fontAwesome";
   font-size: 19px;
   color: #A0C63F;
+  cursor: pointer;
 }
 
 /*=================================
@@ -212,10 +213,11 @@ header .wrapper {
 .slider h2 {
   width: 30%;
   top: 12.5%;
-  left: 55.3%;
+  left: 53.5%;
   color: #fff;
   font-size: 27px;
   line-height: 37px;
+  text-align: center;
 }
 
 .left-button,.right-button {
@@ -226,6 +228,7 @@ header .wrapper {
   text-indent: -9999px;
   top: 50%;
   transform: translateY(-64%);
+  cursor: pointer;
 }
 
 .right-button {
@@ -251,7 +254,7 @@ header .wrapper {
 /* business theme section start  */
 
 .business-theme .wrapper {
-  width: 57%;
+  width: 57.2%;
   padding: 30px 0;
 }
 
@@ -271,7 +274,11 @@ header .wrapper {
 .elegantica-icon {
   padding-top: 218px;
   position: relative;
-  flex-basis: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 25%;
 }
 
 .website-icons span {
@@ -285,8 +292,8 @@ header .wrapper {
   bottom: 62px;
   background-color: #8EB540;
   border-radius: 100%;
-  border: 10px solid#fff;
-  outline: 1px solid #000;
+  border: 15px solid#fff;
+  outline: 1px solid #C3C3C3;
   text-indent: -9999px;
 }
 
@@ -296,7 +303,7 @@ header .wrapper {
   display: block;
   color: #fff;
   font-family: "fontAwesome";
-  font-size: 89px;
+  font-size: 69px;
   text-indent: 0;
 }
 
@@ -327,7 +334,7 @@ header .wrapper {
 /* recent from portfolio section start  */
 
 .recent-from-portfolio .wrapper {
-  width: 57%;
+  width: 57.2%;
   padding: 15px 0;
 }
 
@@ -355,12 +362,12 @@ header .wrapper {
 }
 
 .portfolio-info {
-  padding: 15px;
+  padding: 13px 15px;
   flex-basis: 49%;
 }
 
 .portfolio-info h3 {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 14px;
 }
 
@@ -382,13 +389,13 @@ header .wrapper {
 /* adverstisers and contact section start  */
 
 .advertisers-and-contact .wrapper {
-  width: 57%;
+  width: 57.2%;
   padding: 16px 0 0 0;
 }
 
 .our-major-advertisers h2 {
   margin-left: 31px;
-  font-size: 21px;
+  font-size: 23px;
 }
 
 .advertisers {
@@ -403,7 +410,7 @@ header .wrapper {
 
 .move-up {
   padding: 8px 13px;
-  margin: 5.5% 0 0 96.2%;
+  margin: 5.5% 0 0 95.8%;
   text-indent: -9999px;
   border-radius: 100%;
   display: inline-block;
@@ -416,6 +423,7 @@ header .wrapper {
   float: right;
   font-family: "fontAwesome";
   text-indent: 0;
+  cursor: pointer;
 }
 
 .about-contact {
@@ -425,7 +433,7 @@ header .wrapper {
 }
 
 .about-contact > div {
-  flex-basis: 21%;
+  flex-basis: 22.5%;
 }
 
 .about-us p {
@@ -474,6 +482,14 @@ header .wrapper {
   content: "\f1a6";
 }
 
+.archieves {
+  padding-left: 17px;
+}
+
+.contact-us {
+  padding-left: 17px;
+}
+
 .archieves ul,.contact-us ul {
   margin-top: 7px;
   display: flex;
@@ -481,15 +497,23 @@ header .wrapper {
 }
 
 .archieves ul li {
-  padding: 8.7px 0;
+  padding: 7px 0 9px 0;
   border-bottom: 1px dotted #000;
 }
 
+.archieves ul li:nth-child(1) {
+  padding-top: 6px;
+}
+
 .archieves ul li a ,.contact-us ul li a{
+  color: #000;
+  font-size: 11px;
+}
+
+.contact-us ul li a {
   display: flex;
   align-items: center;
-  color: #7A7A7A;
-  font-size: 11px;
+ 
 }
 
 .archieves ul li:last-child  {
@@ -497,7 +521,11 @@ header .wrapper {
 }
 
 .contact-us ul li {
-  padding: 4px 0 12px 0;
+  padding: 10px 0 5px 0;
+}
+
+.contact-us ul li:nth-child(2) {
+  padding-bottom: 3px;
 }
 
 .contact-us ul li a::before {
@@ -530,14 +558,13 @@ input[type="text"],input[type="email"] {
   border: none;
   border-bottom: 1px solid #ACACAC;
   background-color: #FAFAFA;
-  color: #7A7A7A;
   font-size: 11px;
   font-style: italic;
 }
 
 input[type="submit"] {
   padding: 11px 13px;
-  margin-left: 60%;
+  margin-left: 54%;
   margin-top: 9px;
   border: none;
   background-color: #90B045;
@@ -560,7 +587,7 @@ footer {
 }
 
 footer .wrapper {
-  width: 57%;
+  width: 57.2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -591,9 +618,42 @@ footer ul li a {
 
 /*media query starts*/
 
+/*media query for 1440px starts here*/
+@media only screen and (max-width: 1440px){
+
+  .website-icons {
+    flex-wrap: wrap;
+  }
+
+  .elegantica-icon .icon {
+    margin-bottom: 20px;
+  }
+
+  footer ul {
+    flex-basis: 40%;
+  }
+
+  .about-us ul {
+    width: 100%;
+  }
+
+  .about-contact > div:nth-child(2) h3,.about-contact > div:nth-child(3) h3 {
+    margin-bottom: 25px;
+  }
+}
 /*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px){
 
+  .website-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  
+  .elegantica-icon {
+    flex-basis: 40%;
+  }
 }
 
 
@@ -602,6 +662,7 @@ footer ul li a {
 
 .slider h2 {
   width: 50%;
+  left: 30%;
   font-size: 21px;
  }
 
@@ -617,16 +678,25 @@ footer ul li a {
   font-size: 15px;
 }
 
-header .wrapper,.website-icons {
+header .wrapper {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 20px;
 }
 
+header .wrapper {
+  width: 80%;
+}
+
 .menus {
+  padding: 10px 0;
   width: 100%;
   margin: 0;
+}
+
+.menus ul li {
+  text-align: center;
 }
 
 .advertisers,.about-contact {
@@ -636,20 +706,20 @@ header .wrapper,.website-icons {
   column-gap: 10px;
 }
 
+
 .about-contact > div {
   flex-basis: 100%;
 }
+
 
 .portfolio-content {
   flex-basis: 100%;
 }
 
 .elegantica-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-basis: 40%;
+}
 
-}  
 
 }
 
@@ -657,6 +727,7 @@ header .wrapper,.website-icons {
 
   .menus {
     display: none;
+    background-color: #8EB53E;
   }
 
   .menus ul {
@@ -669,6 +740,9 @@ header .wrapper,.website-icons {
     display: block;
   }
 
+  .elegantica-icon {
+    flex-basis: 100%;
+  }
 }
 
 /* media query for 480px starts here*/ 
