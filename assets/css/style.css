@@ -91,6 +91,15 @@ body {
 a { 
   display: inline-block;
   text-decoration: none; 
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+}
+
+a:hover {
+  color: #ff0000
 }
 
 li {
@@ -254,7 +263,7 @@ header .wrapper {
 /* business theme section start  */
 
 .business-theme .wrapper {
-  width: 57.2%;
+  width: 61.8%;
   padding: 30px 0;
 }
 
@@ -287,7 +296,7 @@ header .wrapper {
   letter-spacing: 1px;
 }
 .elegantica-icon .icon {
-  padding: 28px 20px;
+  padding: 29px 23px;
   position: absolute;
   bottom: 62px;
   background-color: #8EB540;
@@ -309,17 +318,17 @@ header .wrapper {
 
 .elegantica-icon:nth-child(2) .icon::before {
   content: "\f095";
-  padding: 0 17px;
+  padding: 0 14px;
 }
 
 .elegantica-icon:nth-child(3) .icon::before {
   content: "\f013";
-  padding: 0 13px;
+  padding: 0 11px;
 }
 
 .elegantica-icon:nth-child(4) .icon::before {
   content: "\f10b";
-  padding: 0 33px;
+  padding: 0 25px;
 }
 
 .icon-big-font {
@@ -332,6 +341,10 @@ header .wrapper {
 
 /* business theme section end  */
 /* recent from portfolio section start  */
+
+.recent-from-portfolio {
+  background-color: #FCFCFC;
+}
 
 .recent-from-portfolio .wrapper {
   width: 57.2%;
@@ -376,6 +389,10 @@ header .wrapper {
   background-color: #90B045;
   color: #fff;
   font-size: 11px;
+}
+
+.portfolio-info a:hover {
+  color: #ff0000;
 }
 
 .portfolio-info p {
@@ -454,6 +471,11 @@ header .wrapper {
   text-indent: -9999px;
 }
 
+.about-us ul li a:hover {
+  color: #ff0000;
+}
+
+
 .about-us ul li a::before {
   content: "\f09a";
   float: right;
@@ -496,9 +518,17 @@ header .wrapper {
   flex-direction: column;
 }
 
+.archieves ul {
+  padding-right: 16px;
+}
+
 .archieves ul li {
   padding: 7px 0 9px 0;
   border-bottom: 1px dotted #000;
+}
+
+.archieves ul li a:hover {
+  color: #ff0000;
 }
 
 .archieves ul li:nth-child(1) {
@@ -513,7 +543,10 @@ header .wrapper {
 .contact-us ul li a {
   display: flex;
   align-items: center;
- 
+}
+
+.contact-us ul li a:hover {
+  color: #ff0000;
 }
 
 .archieves ul li:last-child  {
@@ -605,10 +638,18 @@ footer ul li a {
   letter-spacing: 1px;
 }
 
+footer ul li a:hover {
+  color: #ff0000;
+}
+
 .copyrights {
   flex-basis: 14.2%;
   font-size: 9px;
   white-space: nowrap;
+}
+
+.copyright-symbol {
+  opacity: 0.8;
 }
 
 
@@ -720,6 +761,10 @@ header .wrapper {
   flex-basis: 40%;
 }
 
+footer ul {
+  flex-basis: 50%;
+}
+
 
 }
 
@@ -743,6 +788,21 @@ header .wrapper {
   .elegantica-icon {
     flex-basis: 100%;
   }
+
+  footer .wrapper ul {
+    width: 100%;  
+  }
+  
+  .copyrights {
+    font-size: 7px;
+  }
+
+  footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
 }
 
 /* media query for 480px starts here*/ 
