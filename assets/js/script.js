@@ -1,9 +1,10 @@
 $(document).ready(function(){
     $(".hamburger").click(function(){
-        $(".menus").slideToggle();
+         $(".menus").slideToggle();
         $(this).toggleClass("cross");
     });
-})
+});
+
 
 
 
