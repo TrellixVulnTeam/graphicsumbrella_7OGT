@@ -6,9 +6,9 @@ $(document).ready(function(){
 
     $('.slider-list').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 300,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
           {
