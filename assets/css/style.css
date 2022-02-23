@@ -202,9 +202,13 @@ header .wrapper {
   background-color: #A0C63F;
 }
 
+.slider .wrapper {
+  width: 85.3%;
+}
+
 .slider figure {
   width: 534px;
-  margin-left: 17.6%;
+  margin-left: 13.9%;
 }
 
 .slider h2 {
@@ -225,33 +229,22 @@ header .wrapper {
   position: relative;
 }
 
-.left-button,.right-button {
-  padding: 6px 16px;
-  border: 6px solid #fff;
-  border-radius: 100%;
-  display: inline-block;
-  text-indent: -9999px;
-  top: 50%;
-  transform: translateY(-64%);
-  cursor: pointer;
+.slick-next, .slick-prev {
+  top: 43%;
 }
 
-.right-button {
-  right: 0;
+
+.slick-prev::before,.slick-next::before {
+  font-size: 58px;
 }
 
-.left-button::before,.right-button::before {
-  content: "\f104";
-  font-family: "fontAwesome";
-  float: right;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-  text-indent: 0;
+.slider-list-item {
+  width: 1257px;
+  margin-left: 39px;
 }
 
-.right-button::before {
-  content: "\f105";
+.slick-next {
+  right: 17px;
 }
 
 /* slider section end  */
