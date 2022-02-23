@@ -175,7 +175,7 @@ header .wrapper {
   position: absolute;
   right: 0;
   top: -7px;
-  font-size: 9.5px;
+  font-size: 9px;
 }
 
 .pull-me::after {
@@ -281,7 +281,7 @@ header .wrapper {
 }
 
 .elegantica-icon {
-  padding-top: 218px;
+  padding-top: 212px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -301,7 +301,7 @@ header .wrapper {
   bottom: 62px;
   background-color: #8EB540;
   border-radius: 100%;
-  border: 15px solid#fff;
+  border: 17px solid#fff;
   outline: 1px solid #C3C3C3;
   text-indent: -9999px;
 }
@@ -336,6 +336,7 @@ header .wrapper {
 }
 
 .icon-small-font {
+  margin-top: 2px;
   font-size: 15px;
 }
 
@@ -460,7 +461,7 @@ header .wrapper {
 }
 
 .about-us ul {
-  width: 80%;
+  width: 82%;
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
@@ -482,6 +483,10 @@ header .wrapper {
   color: #DCDCDC;
   font-family: "fontAwesome";
   text-indent: 0;
+}
+
+.about-us ul li a:hover:before {
+  color: red;
 }
 
 .about-us ul li:nth-child(2) a:before {
@@ -519,7 +524,7 @@ header .wrapper {
 }
 
 .archieves ul {
-  padding-right: 16px;
+  padding-right: 12px;
 }
 
 .archieves ul li {
@@ -596,14 +601,20 @@ input[type="text"],input[type="email"] {
 }
 
 input[type="submit"] {
-  padding: 11px 13px;
+  padding: 10px 12px;
   margin-left: 54%;
   margin-top: 9px;
-  border: none;
+  border: 2px solid #90B045;
   background-color: #90B045;
-  color: #fff;
+  color: #CCCCCC;
   font-size: 11px;
 }
+
+input[type="submit"]:hover {
+  background-color: transparent;
+  color: #90B045;
+}
+
 /* adverstisers and contact section end   */
 /*=================================
   main styling ends here
