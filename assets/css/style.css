@@ -202,20 +202,12 @@ header .wrapper {
   background-color: #A0C63F;
 }
 
-.slider .wrapper {
-  position: relative;
-}
-
-/* .slider-list li:nth-child(2),.slider-list li:nth-child(3) {
-  display: none;
-} */
-
 .slider figure {
   width: 534px;
-  margin-left: 44.5%;
+  margin-left: 17.6%;
 }
 
-.left-button,.right-button,.slider h2 {
+.slider h2 {
   position: absolute;
 }
 
@@ -227,6 +219,10 @@ header .wrapper {
   font-size: 27px;
   line-height: 37px;
   text-align: center;
+}
+
+.slider-list-item {
+  position: relative;
 }
 
 .left-button,.right-button {
