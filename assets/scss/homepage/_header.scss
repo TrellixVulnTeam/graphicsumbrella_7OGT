@@ -1,0 +1,23 @@
+header {
+    .wrapper {
+        width: 57.2%;
+        padding: 30px 0 20px 0;
+        position: relative;
+        @include flex_properties(normal,center);
+    
+    @at-root
+    .hamburger,.cross {
+        display: none;
+        text-indent: -9999px; 
+
+        &::before {
+            @include font-icon("\f0c9",16px);
+            color: #000;
+        }
+    }
+    @at-root
+    .cross::before {
+        content: "\f00d";
+    }
+    }
+}
