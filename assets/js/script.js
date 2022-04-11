@@ -4,7 +4,7 @@ $(document).ready(function(){
         $(this).toggleClass("cross");
     });
 
-    $('.slider-list').slick({
+    $('.slider__slider-list').slick({
         dots: true,
         infinite: true,
         speed: 300,
