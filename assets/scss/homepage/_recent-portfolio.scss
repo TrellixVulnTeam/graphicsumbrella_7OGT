@@ -1,0 +1,11 @@
+.recent-from-portfolio {
+    background-color: map-get($colors,light-white);
+    .wrapper {
+        width: 57.2%;
+        padding: 15px 0;
+    }
+    h2 {
+        @include mg_rule(left,31px);
+        font-size: map-get($font,font-xxii);
+    }
+  }

@@ -9,7 +9,7 @@
     }
     &__website-icons {
         @include mg_rule(top,29px);
-        border-top: 1px dotted #CCCCCC;
+        border-top: 1px dotted map-get($colors,lighter-white);
         @include flex_properties(space-between,normal);
         text-align: center;
         &__elegantica-icon {
@@ -22,15 +22,15 @@
                 padding: 29px 23px;
                 position: absolute;
                 bottom: 62px;
-                background-color: #8EB540;
+                background-color: map-get($colors,grass-color);
                 border-radius: 100%;
-                border: 17px solid #fff;
-                outline: 1px solid #C3C3C3;
+                border: 17px solid map-get($colors,primary_color);
+                outline: 1px solid map-get($colors,light-gray);
                 text-indent: -9999px;
                 &::before {
                     @include font-icon("\f260",69px);
                     display: block;
-                    color: #fff;
+                    color: map-get($colors,primary_color);
                 }
                 @include reverse_breakpoint("large-pc") {
                 @include mg_rule(bottom,20px);
