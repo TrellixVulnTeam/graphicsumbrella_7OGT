@@ -1,0 +1,256 @@
+.advertisers-and-contact {
+    .wrapper {
+        width: 57.2%;
+        padding: 16px 0 0 0;
+    }
+
+    @at-root &__our-major-advertisers {
+        h2 {
+            @include mg_rule(left, 31px);
+            font-size: map-get($font, font-xxiii);
+        }
+
+        @at-root &__advertisers {
+            @include mg_rule(top, 32px);
+            @include flex_properties(normal, normal);
+
+            figure {
+                width: 147px;
+                height: 118px;
+            }
+
+            @include reverse_breakpoint("mini-ipad") {
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 20px;
+                column-gap: 10px;
+            }
+        }
+
+        @at-root &__move-up {
+            padding: 8px 13px;
+            margin: 5.5% 0 0 95.8%;
+            text-indent: -9999px;
+            border-radius: 100%;
+            display: inline-block;
+            background-color: map-get($colors, faint-green);
+            color: map-get($colors, primary_color);
+
+            &::before {
+                @include font-icon("\f106", 16px);
+                cursor: pointer;
+            }
+        }
+    }
+
+    @at-root &__about-contact {
+        padding: 50px 0 18px 0;
+        @include flex_properties(space-between, normal);
+
+        &>div {
+            flex-basis: 22.5%;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                h3 {
+                    @include reverse_breakpoint("large-pc") {
+                        @include mg_rule(bottom, 25px);
+                    }
+                }
+            }
+
+            @include reverse_breakpoint("mini-ipad") {
+                flex-basis: 100%;
+            }
+        }
+
+        @at-root &__about-us {
+            p {
+                margin: 15px 0 17px 0;
+                font-size: map-get($colors, font-xi);
+                line-height: 18px;
+
+                @include reverse_breakpoint("large-pc") {
+                    @include mg_rule(top, 34px);
+                }
+            }
+
+            ul {
+                width: 82%;
+                @include mg_rule(top, 12px);
+                @include flex_properties(space-between, normal);
+
+                li {
+                    a {
+                        font-size: map-get($font, font-xviii);
+                        text-indent: -9999px;
+
+                        &:hover {
+                            @include hover-effect;
+                        }
+
+                        &::before {
+                            @include font-icon("\f09a", 18px);
+                            color: map-get($colors, lightest-white);
+                        }
+
+                        &:hover:before {
+                            @include hover-effect();
+                        }
+                    }
+
+                    &:nth-child(2) a::before {
+                        content: "\f099";
+                    }
+
+                    &:nth-child(3) a::before {
+                        content: "\f09e";
+                    }
+
+                    &:nth-child(4) a::before {
+                        content: "\f27d";
+                    }
+
+                    &:nth-child(5) a::before {
+                        content: "\f17d";
+                    }
+
+                    &:nth-child(6) a::before {
+                        content: "\f1a6";
+                    }
+                }
+
+                @include reverse_breakpoint("large-pc") {
+                    width: 100%;
+                }
+            }
+        }
+
+        @at-root &__archieves {
+            padding-left: 17px;
+
+            ul {
+                padding-right: 12px;
+                @include mg_rule(top, 7px);
+                @include flex_properties(normal, normal);
+                flex-direction: column;
+
+                li {
+                    padding: 7px 0 9px 0;
+                    border-bottom: 1px dotted map-get($colors, black_color);
+
+                    a {
+                        color: map-get($colors, black_color);
+                        font-size: map-get($font, font-xi);
+
+                        &:hover {
+                            @include hover-effect();
+                        }
+                    }
+
+                    :first-child {
+                        padding-top: 6px;
+                    }
+
+                    :last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        @at-root &__contact-us {
+            ul {
+                @include mg_rule(top, 7px);
+                @include flex_properties(normal, normal);
+                flex-direction: column;
+
+                li {
+                    padding: 10px 0 5px 0;
+
+                    a {
+                        @include flex_properties(normal, center);
+                        color: map-get($colors, black_color);
+                        font-size: map-get($font, font-xi);
+
+                        &:hover {
+                            @include hover-effect();
+                        }
+
+                        &::before {
+                            @include font-icon("\f003", 23px);
+                            @include mg_rule(right, 10px);
+                            color: map-get($colors, faint-gray);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        padding-bottom: 3px;
+
+                        a {
+                            &::before {
+                                @include font-icon("\f095", 23px);
+                                @include mg_rule(right, 15px);
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        a {
+                            &::before {
+                                @include font-icon("\f10b", 34px);
+                                @include mg_rule(right, 15px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @at-root &__sign-to-newsletter {
+            h3 {
+                @include reverse_breakpoint("large-pc") {
+                    white-space: nowrap;
+                }
+            }
+
+            form {
+                @include mg_rule(top, 20px);
+
+                @at-root input[type="text"],
+                input[type="email"] {
+                    width: 100%;
+                    padding: 10px 0 10px 15px;
+                    @include mg_rule(bottom, 9px);
+                    border: none;
+                    border-bottom: 1px solid map-get($colors, faint-gray);
+                    background-color: map-get($colors, almost-white);
+                    font-size: map-get($font, font-xi);
+                    font-style: italic;
+                }
+
+                input[type="submit"] {
+                    padding: 10px 12px;
+                    @include mg_rule(left, 54%);
+                    @include mg_rule(top, 9px);
+                    border: 2px solid map-get($colors, faint-green);
+                    background-color: map-get($colors, faint-green);
+                    color: map-get($colors, light-white);
+                    font-size: map-get($font, font-xi);
+
+                    &:hover {
+                        background-color: map-get($colors, transparent);
+                        color: map-get($colors, faint-green);
+                    }
+                }
+            }
+        }
+
+        @include reverse_breakpoint("mini-ipad") {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+    }
+}

@@ -413,3 +413,188 @@ header .wrapper {
     @media screen and (max-width: 768px) {
       .recent-from-portfolio__portfolio {
         justify-content: center; } }
+
+.advertisers-and-contact .wrapper {
+  width: 57.2%;
+  padding: 16px 0 0 0; }
+
+.advertisers-and-contact__our-major-advertisers h2 {
+  margin-left: 31px;
+  font-size: 23px; }
+
+.advertisers-and-contact__our-major-advertisers__advertisers {
+  margin-top: 32px;
+  display: flex;
+  justify-content: normal;
+  align-items: normal; }
+  .advertisers-and-contact__our-major-advertisers__advertisers figure {
+    width: 147px;
+    height: 118px; }
+  @media screen and (max-width: 995px) {
+    .advertisers-and-contact__our-major-advertisers__advertisers {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 20px;
+      column-gap: 10px; } }
+
+.advertisers-and-contact__our-major-advertisers__move-up {
+  padding: 8px 13px;
+  margin: 5.5% 0 0 95.8%;
+  text-indent: -9999px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #90B045;
+  color: #fff; }
+  .advertisers-and-contact__our-major-advertisers__move-up::before {
+    content: "";
+    float: right;
+    font-family: "fontAwesome";
+    font-size: 16px;
+    text-indent: 0;
+    cursor: pointer; }
+
+.advertisers-and-contact__about-contact {
+  padding: 50px 0 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal; }
+  .advertisers-and-contact__about-contact > div {
+    flex-basis: 22.5%; }
+    @media screen and (max-width: 1440px) {
+      .advertisers-and-contact__about-contact > div:nth-child(2) h3, .advertisers-and-contact__about-contact > div:nth-child(3) h3 {
+        margin-bottom: 25px; } }
+    @media screen and (max-width: 995px) {
+      .advertisers-and-contact__about-contact > div {
+        flex-basis: 100%; } }
+  .advertisers-and-contact__about-contact__about-us p {
+    margin: 15px 0 17px 0;
+    line-height: 18px; }
+    @media screen and (max-width: 1440px) {
+      .advertisers-and-contact__about-contact__about-us p {
+        margin-top: 34px; } }
+  .advertisers-and-contact__about-contact__about-us ul {
+    width: 82%;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal; }
+    .advertisers-and-contact__about-contact__about-us ul li a {
+      font-size: 18px;
+      text-indent: -9999px; }
+      .advertisers-and-contact__about-contact__about-us ul li a:hover {
+        color: #ff0000; }
+      .advertisers-and-contact__about-contact__about-us ul li a::before {
+        content: "";
+        float: right;
+        font-family: "fontAwesome";
+        font-size: 18px;
+        text-indent: 0;
+        color: #DCDCDC; }
+      .advertisers-and-contact__about-contact__about-us ul li a:hover:before {
+        color: #ff0000; }
+    .advertisers-and-contact__about-contact__about-us ul li:nth-child(2) a::before {
+      content: "\f099"; }
+    .advertisers-and-contact__about-contact__about-us ul li:nth-child(3) a::before {
+      content: "\f09e"; }
+    .advertisers-and-contact__about-contact__about-us ul li:nth-child(4) a::before {
+      content: "\f27d"; }
+    .advertisers-and-contact__about-contact__about-us ul li:nth-child(5) a::before {
+      content: "\f17d"; }
+    .advertisers-and-contact__about-contact__about-us ul li:nth-child(6) a::before {
+      content: "\f1a6"; }
+    @media screen and (max-width: 1440px) {
+      .advertisers-and-contact__about-contact__about-us ul {
+        width: 100%; } }
+  .advertisers-and-contact__about-contact__archieves {
+    padding-left: 17px; }
+    .advertisers-and-contact__about-contact__archieves ul {
+      padding-right: 12px;
+      margin-top: 7px;
+      display: flex;
+      justify-content: normal;
+      align-items: normal;
+      flex-direction: column; }
+      .advertisers-and-contact__about-contact__archieves ul li {
+        padding: 7px 0 9px 0;
+        border-bottom: 1px dotted #000; }
+        .advertisers-and-contact__about-contact__archieves ul li a {
+          color: #000;
+          font-size: 11px; }
+          .advertisers-and-contact__about-contact__archieves ul li a:hover {
+            color: #ff0000; }
+        .advertisers-and-contact__about-contact__archieves ul li :first-child {
+          padding-top: 6px; }
+        .advertisers-and-contact__about-contact__archieves ul li :last-child {
+          border: none; }
+  .advertisers-and-contact__about-contact__contact-us ul {
+    margin-top: 7px;
+    display: flex;
+    justify-content: normal;
+    align-items: normal;
+    flex-direction: column; }
+    .advertisers-and-contact__about-contact__contact-us ul li {
+      padding: 10px 0 5px 0; }
+      .advertisers-and-contact__about-contact__contact-us ul li a {
+        display: flex;
+        justify-content: normal;
+        align-items: center;
+        color: #000;
+        font-size: 11px; }
+        .advertisers-and-contact__about-contact__contact-us ul li a:hover {
+          color: #ff0000; }
+        .advertisers-and-contact__about-contact__contact-us ul li a::before {
+          content: "";
+          float: right;
+          font-family: "fontAwesome";
+          font-size: 23px;
+          text-indent: 0;
+          margin-right: 10px;
+          color: #ACACAC; }
+      .advertisers-and-contact__about-contact__contact-us ul li:nth-child(2) {
+        padding-bottom: 3px; }
+        .advertisers-and-contact__about-contact__contact-us ul li:nth-child(2) a::before {
+          content: "";
+          float: right;
+          font-family: "fontAwesome";
+          font-size: 23px;
+          text-indent: 0;
+          margin-right: 15px; }
+      .advertisers-and-contact__about-contact__contact-us ul li:nth-child(3) a::before {
+        content: "";
+        float: right;
+        font-family: "fontAwesome";
+        font-size: 34px;
+        text-indent: 0;
+        margin-right: 15px; }
+  @media screen and (max-width: 1440px) {
+    .advertisers-and-contact__about-contact__sign-to-newsletter h3 {
+      white-space: nowrap; } }
+  .advertisers-and-contact__about-contact__sign-to-newsletter form {
+    margin-top: 20px; }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px 0 10px 15px;
+      margin-bottom: 9px;
+      border: none;
+      border-bottom: 1px solid #ACACAC;
+      background-color: #FAFAFA;
+      font-size: 11px;
+      font-style: italic; }
+    .advertisers-and-contact__about-contact__sign-to-newsletter form input[type="submit"] {
+      padding: 10px 12px;
+      margin-left: 54%;
+      margin-top: 9px;
+      border: 2px solid #90B045;
+      background-color: #90B045;
+      color: #FCFCFC;
+      font-size: 11px; }
+      .advertisers-and-contact__about-contact__sign-to-newsletter form input[type="submit"]:hover {
+        background-color: transparent;
+        color: #90B045; }
+  @media screen and (max-width: 995px) {
+    .advertisers-and-contact__about-contact {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 20px;
+      column-gap: 10px; } }
