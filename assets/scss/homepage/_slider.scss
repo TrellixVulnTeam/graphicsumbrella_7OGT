@@ -40,9 +40,11 @@
         @include mg_rule(left,39px);
         position: relative;
       }
+      @at-root
       .slick-prev::before,.slick-next::before {
         font-size: map-get($font,font-lviii);
       }
+      @at-root
       .slick-next {
         right: 17px;
       }

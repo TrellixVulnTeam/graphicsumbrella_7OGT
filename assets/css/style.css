@@ -285,7 +285,7 @@ header .wrapper {
     width: 1257px;
     margin-left: 39px;
     position: relative; }
-  .slider .slick-prev::before, .slider .slick-next::before {
+  .slick-prev::before, .slick-next::before {
     font-size: 58px; }
-  .slider .slick-next {
+  .slick-next {
     right: 17px; }
