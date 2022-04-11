@@ -253,7 +253,7 @@ header .wrapper {
 .slider {
   padding: 30px 0;
   background-color: #A0C63F; }
-  .wrapper {
+  .slider .wrapper {
     width: 85.3%; }
   .slider figure {
     width: 534px;
@@ -265,8 +265,9 @@ header .wrapper {
       .slider figure {
         width: auto; } }
   .slider h2 {
+    position: absolute; }
+  .slider h2 {
     width: 30%;
-    position: absolute;
     top: 12.5%;
     left: 53.5%;
     color: #fff;
@@ -289,3 +290,79 @@ header .wrapper {
     font-size: 58px; }
   .slick-next {
     right: 17px; }
+
+.business-theme .wrapper {
+  width: 61.8%;
+  padding: 30px 0; }
+  .business-theme .wrapper h2 {
+    font-size: 28px;
+    text-align: center; }
+
+.business-theme__website-icons {
+  margin-top: 29px;
+  border-top: 1px dotted #CCCCCC;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  text-align: center; }
+  .business-theme__website-icons__elegantica-icon {
+    padding-top: 212px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 25%; }
+    .business-theme__website-icons__elegantica-icon .icon {
+      padding: 29px 23px;
+      position: absolute;
+      bottom: 62px;
+      background-color: #8EB540;
+      border-radius: 100%;
+      border: 17px solid #fff;
+      outline: 1px solid #C3C3C3;
+      text-indent: -9999px; }
+      .business-theme__website-icons__elegantica-icon .icon::before {
+        content: "";
+        float: right;
+        font-family: "fontAwesome";
+        font-size: 69px;
+        text-indent: 0;
+        display: block;
+        color: #fff; }
+      @media screen and (max-width: 1440px) {
+        .business-theme__website-icons__elegantica-icon .icon {
+          margin-bottom: 20px; } }
+    .business-theme__website-icons__elegantica-icon :nth-child(2) .icon::before {
+      content: "\f095";
+      padding: 0 14px; }
+    .business-theme__website-icons__elegantica-icon :nth-child(3) .icon::before {
+      content: "\f013";
+      padding: 0 11px; }
+    .business-theme__website-icons__elegantica-icon :nth-child(4) .icon::before {
+      content: "\f10b";
+      padding: 0 25px; }
+    .business-theme__website-icons__elegantica-icon .icon-big-font {
+      font-size: 26px; }
+    .business-theme__website-icons__elegantica-icon .icon-small-font {
+      margin-top: 2px;
+      font-size: 15px; }
+    @media screen and (max-width: 1024px) {
+      .business-theme__website-icons__elegantica-icon {
+        flex-basis: 40%; } }
+    @media screen and (max-width: 768px) {
+      .business-theme__website-icons__elegantica-icon {
+        flex-basis: 100%; } }
+  .business-theme__website-icons span {
+    display: block;
+    text-align: center;
+    letter-spacing: 1px; }
+  @media screen and (max-width: 1440px) {
+    .business-theme__website-icons {
+      flex-wrap: wrap; } }
+  @media screen and (max-width: 1024px) {
+    .business-theme__website-icons {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 20px;
+      column-gap: 10px; } }

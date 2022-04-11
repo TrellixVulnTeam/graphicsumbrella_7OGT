@@ -1,7 +1,6 @@
 .slider {
     padding: 30px 0;
     background-color: map-get($colors,greenish-color);
-    @at-root
     .wrapper {
         width: 85.3%;
     }
@@ -15,10 +14,12 @@
             width: auto;
         }
     }
+    h2 {
+        position: absolute;
+    }
 
     h2 {
         width: 30%;
-        position: absolute;
         top: 12.5%;
         left: 53.5%;
         color: map-get($colors,primary_color);
