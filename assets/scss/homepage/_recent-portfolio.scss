@@ -1,11 +1,65 @@
 .recent-from-portfolio {
-    background-color: map-get($colors,light-white);
+    background-color: map-get($colors, light-white);
+
     .wrapper {
         width: 57.2%;
         padding: 15px 0;
     }
+
     h2 {
-        @include mg_rule(left,31px);
-        font-size: map-get($font,font-xxii);
+        @include mg_rule(left, 31px);
+        font-size: map-get($font, font-xxii);
     }
-  }
+
+    @at-root &__portfolio {
+        @include mg_rule(top, 30px);
+        @include flex_properties(space-between, normal);
+        flex-wrap: wrap;
+        row-gap: 12px;
+
+        @at-root .portfolio-content {
+            @include flex_properties(normal, normal);
+            flex-basis: 48.4%;
+
+            figure {
+                width: 232px;
+                height: 135px;
+            }
+
+            @at-root &__portfolio-info {
+                padding: 13px 15px;
+                flex-basis: 49%;
+
+                h3 {
+                    @include mg_rule(bottom, 4px);
+                    font-size: map-get($font, font-xiv);
+                }
+
+                a {
+                    padding: 2px 11px;
+                    background-color: map-get($colors, faint-green);
+                    color: map-get($colors, primary_color);
+                    font-size: map-get($font, font-xi);
+
+                    &:hover {
+                        @include hover-effect();
+                    }
+                }
+
+                p {
+                    @include mg_rule(top, 10px);
+                    font-size: map-get($font, font-xi);
+                    line-height: 18px;
+                }
+            }
+
+            @include reverse_breakpoint("mini-ipad") {
+                flex-basis: 100%;
+            }
+        }
+
+        @include reverse_breakpoint("tablet") {
+            justify-content: center;
+        }
+    }
+}
