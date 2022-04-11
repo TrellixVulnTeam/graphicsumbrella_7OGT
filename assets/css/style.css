@@ -223,6 +223,11 @@ header .wrapper {
       .cross {
         display: block;
         align-self: flex-start; } }
+    @media screen and (max-width: 768px) {
+      .hamburger,
+      .cross {
+        margin-left: auto;
+        z-index: 2; } }
   .cross::before {
     content: "\f00d"; }
   .menus {
@@ -242,6 +247,9 @@ header .wrapper {
         -o-transition: All ease-in-out 0.3s; }
         .menus ul li a:hover {
           color: #ff0000; }
+        @media screen and (max-width: 768px) {
+          .menus ul li a:hover {
+            color: #000; } }
       @media screen and (max-width: 995px) {
         .menus ul li {
           text-align: center; } }
@@ -256,7 +264,12 @@ header .wrapper {
         margin-left: 0; } }
     @media screen and (max-width: 768px) {
       .menus {
+        width: 50%;
         display: none;
+        position: absolute;
+        z-index: 1;
+        top: 30%;
+        left: 50%;
         background-color: #8EB53E; } }
   .pull-me {
     position: absolute;
@@ -463,7 +476,7 @@ header .wrapper {
         .portfolio-content__portfolio-info p {
           margin-top: 10px;
           font-size: 11px;
-          line-height: 18px; }
+          line-height: 17px; }
       @media screen and (max-width: 995px) {
         .portfolio-content {
           flex-basis: 100%; } }
@@ -586,7 +599,7 @@ header .wrapper {
       flex-direction: column; }
       .advertisers-and-contact__about-contact__archieves ul li {
         padding: 7px 0 9px 0;
-        border-bottom: 1px dotted #000; }
+        border-bottom: 1px dotted #CCCCCC; }
         .advertisers-and-contact__about-contact__archieves ul li a {
           color: #000;
           font-size: 11px;
@@ -662,7 +675,7 @@ header .wrapper {
       padding: 10px 0 10px 15px;
       margin-bottom: 9px;
       border: none;
-      border-bottom: 1px solid #ACACAC;
+      border-bottom: 1px solid #CCCCCC;
       background-color: #FAFAFA;
       font-size: 11px;
       font-style: italic; }

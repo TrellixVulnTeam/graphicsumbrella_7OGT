@@ -19,6 +19,10 @@ header {
                 display: block;
                 align-self: flex-start;
             }
+            @include reverse_breakpoint("tablet") {
+                margin-left: auto;
+                z-index: 2;
+            }
         }
 
         @at-root .cross::before {
@@ -42,6 +46,11 @@ header {
                         }
 
                         @include transition-effect();
+                        @include reverse_breakpoint("tablet") {
+                            &:hover {
+                                color: map-get($colors,black_color);
+                            }
+                        }
                     }
 
                     @include reverse_breakpoint("mini-ipad") {
@@ -62,7 +71,12 @@ header {
             }
 
             @include reverse_breakpoint("tablet") {
+                width: 50%;
                 display: none;
+                position: absolute;
+                z-index: 1;
+                top: 30%;
+                left: 50%;
                 background-color: #8EB53E;
             }
         }

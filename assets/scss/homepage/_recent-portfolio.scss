@@ -52,7 +52,7 @@
                 p {
                     @include mg_rule(top, 10px);
                     font-size: map-get($font, font-xi);
-                    line-height: 18px;
+                    line-height: 17px;
                 }
             }
 
