@@ -12,7 +12,7 @@ header {
 
         &::before {
             @include font-icon("\f0c9",16px);
-            color: #000;
+            color: map-get($colors ,black_color);
         }
         @include reverse_breakpoint("tablet") {
             display: block;
@@ -31,7 +31,7 @@ header {
            @include flex_properties(space-between,normal);
            li {
                a {
-                color: #000;
+                color: map-get($colors ,black_color);
                 font-size: map-get($font,font-xi);
                 &:hover {
                     @include hover-effect();

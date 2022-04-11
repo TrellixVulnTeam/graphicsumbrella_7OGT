@@ -1,0 +1,49 @@
+.slider {
+    padding: 30px 0;
+    background-color: map-get($colors,greenish-color);
+    @at-root
+    .wrapper {
+        width: 85.3%;
+    }
+    figure {
+        width: 534px;
+        @include mg_rule(left,13.9%);
+        @include reverse_breakpoint("mini-ipad") {
+            @include mg_rule(left,0);
+        }
+        @include reverse_breakpoint("tablet") {
+            width: auto;
+        }
+    }
+
+    h2 {
+        width: 30%;
+        position: absolute;
+        top: 12.5%;
+        left: 53.5%;
+        color: map-get($colors,primary_color);
+        font-size: map-get($font,font-xxvii);
+        line-height: 37px;
+        text-align: center;
+        @include reverse_breakpoint("mini-ipad") {
+            width: 50%;
+            left: 30%;
+            font-size: map-get($font,font-xxi);
+        }
+        @include reverse_breakpoint("tablet") {
+            font-size: map-get($font,font-xv);
+        }
+    }
+    @at-root
+    &__slider-list-item {
+        width: 1257px;
+        @include mg_rule(left,39px);
+        position: relative;
+      }
+      .slick-prev::before,.slick-next::before {
+        font-size: map-get($font,font-lviii);
+      }
+      .slick-next {
+        right: 17px;
+      }
+}

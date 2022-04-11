@@ -249,3 +249,43 @@ header .wrapper {
   @media screen and (max-width: 995px) {
     header .wrapper {
       width: 80%; } }
+
+.slider {
+  padding: 30px 0;
+  background-color: #A0C63F; }
+  .wrapper {
+    width: 85.3%; }
+  .slider figure {
+    width: 534px;
+    margin-left: 13.9%; }
+    @media screen and (max-width: 995px) {
+      .slider figure {
+        margin-left: 0; } }
+    @media screen and (max-width: 768px) {
+      .slider figure {
+        width: auto; } }
+  .slider h2 {
+    width: 30%;
+    position: absolute;
+    top: 12.5%;
+    left: 53.5%;
+    color: #fff;
+    font-size: 27px;
+    line-height: 37px;
+    text-align: center; }
+    @media screen and (max-width: 995px) {
+      .slider h2 {
+        width: 50%;
+        left: 30%;
+        font-size: 21px; } }
+    @media screen and (max-width: 768px) {
+      .slider h2 {
+        font-size: 15px; } }
+  .slider__slider-list-item {
+    width: 1257px;
+    margin-left: 39px;
+    position: relative; }
+  .slider .slick-prev::before, .slider .slick-next::before {
+    font-size: 58px; }
+  .slider .slick-next {
+    right: 17px; }
