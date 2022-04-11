@@ -43,7 +43,9 @@
 
                     &:hover {
                         @include hover-effect();
+                        background-color: map-get($colors, black_color);
                     }
+
                     @include transition-effect();
                 }
 

@@ -1,49 +1,58 @@
 footer {
     padding: 3px 0;
-    background-color: map-get($colors,black_color);
-    color: map-get($colors,primary_color);
+    background-color: map-get($colors, black_color);
+    color: map-get($colors, primary_color);
+
     .wrapper {
         width: 57.2%;
-        @include flex_properties(space-between,center);
+        @include flex_properties(space-between, center);
+
         @include reverse_breakpoint("tablet") {
-            @include flex_properties(normal,normal);
+            @include flex_properties(normal, normal);
             flex-direction: column;
             row-gap: 10px;
         }
     }
+
     ul {
-        @include flex_properties(space-between,normal);
+        @include flex_properties(space-between, normal);
         flex-basis: 26.6%;
+
         li {
             a {
-                color: map-get($colors,primary_color);
-                font-size: map-get($font,font-x);
+                color: map-get($colors, primary_color);
+                font-size: map-get($font, font-x);
                 opacity: 0.8;
                 letter-spacing: 1px;
+
                 &:hover {
                     @include hover-effect();
                 }
+
                 @include transition-effect();
             }
         }
+
         @include reverse_breakpoint("large-pc") {
             flex-basis: 40%;
         }
+
         @include reverse_breakpoint("mini-ipad") {
             flex-basis: 50%;
         }
+
         @include reverse_breakpoint("tablet") {
             width: 100%;
         }
     }
-    @at-root
-    .copyrights {
+
+    @at-root .copyrights {
         flex-basis: 14.2%;
-        font-size: map-get($font,font-ix);
+        font-size: map-get($font, font-ix);
         white-space: nowrap;
-        @at-root
-        &__copyright-symbol {
+
+        @at-root &__copyright-symbol {
             opacity: 0.8;
         }
     }
-  }
+}

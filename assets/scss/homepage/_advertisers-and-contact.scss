@@ -40,6 +40,12 @@
                 @include font-icon("\f106", 16px);
                 cursor: pointer;
             }
+
+            @include transition-effect();
+
+            &:hover {
+                background-color: map-get($colors, black_color);
+            }
         }
     }
 
@@ -97,6 +103,7 @@
                         &:hover:before {
                             @include hover-effect();
                         }
+
                         @include transition-effect();
                     }
 
@@ -128,11 +135,11 @@
         }
 
         @at-root &__archieves {
-            padding-left: 17px;
+            padding-left: 9px;
 
             ul {
                 padding-right: 12px;
-                @include mg_rule(top, 7px);
+                @include mg_rule(top, 5px);
                 @include flex_properties(normal, normal);
                 flex-direction: column;
 
@@ -147,6 +154,7 @@
                         &:hover {
                             @include hover-effect();
                         }
+
                         @include transition-effect();
                     }
 
@@ -163,7 +171,7 @@
 
         @at-root &__contact-us {
             ul {
-                @include mg_rule(top, 7px);
+                @include mg_rule(top, 6px);
                 @include flex_properties(normal, normal);
                 flex-direction: column;
 
@@ -174,6 +182,7 @@
                         @include flex_properties(normal, center);
                         color: map-get($colors, black_color);
                         font-size: map-get($font, font-xi);
+                        @include transition-effect();
 
                         &:hover {
                             @include hover-effect();
@@ -184,6 +193,7 @@
                             @include mg_rule(right, 10px);
                             color: map-get($colors, faint-gray);
                         }
+
                         @include transition-effect();
                     }
 
@@ -240,9 +250,10 @@
                     background-color: map-get($colors, faint-green);
                     color: map-get($colors, light-white);
                     font-size: map-get($font, font-xi);
+                    @include transition-effect();
 
                     &:hover {
-                        background-color: map-get($colors, transparent);
+                        background-color: map-get($colors, black_color);
                         color: map-get($colors, faint-green);
                     }
                 }

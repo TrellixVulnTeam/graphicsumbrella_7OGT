@@ -2,86 +2,113 @@
     .wrapper {
         width: 61.8%;
         padding: 30px 0;
+
         h2 {
-            font-size: map-get($font,font-xxviii);
+            font-size: map-get($font, font-xxviii);
             text-align: center;
         }
     }
+
     &__website-icons {
-        @include mg_rule(top,29px);
-        border-top: 1px dashed map-get($colors,lighter-white);
-        @include flex_properties(space-between,normal);
+        @include mg_rule(top, 29px);
+        border-top: 1px dashed map-get($colors, lighter-white);
+        @include flex_properties(space-between, normal);
         text-align: center;
+
         &__elegantica-icon {
             padding-top: 212px;
             position: relative;
-            @include flex_properties(center,center);
+            @include flex_properties(center, center);
             flex-direction: column;
             flex-basis: 25%;
+
             .icon {
                 padding: 29px 23px;
                 position: absolute;
                 bottom: 62px;
-                background-color: map-get($colors,grass-color);
+                background-color: map-get($colors, grass-color);
                 border-radius: 100%;
-                border: 17px solid map-get($colors,primary_color);
-                outline: 1px solid map-get($colors,light-gray);
+                border: 17px solid map-get($colors, primary_color);
+                outline: 1px solid map-get($colors, light-gray);
                 text-indent: -9999px;
+
                 &::before {
-                    @include font-icon("\f260",69px);
+                    @include font-icon("\f260", 69px);
                     display: block;
-                    color: map-get($colors,primary_color);
+                    color: map-get($colors, primary_color);
                 }
+
                 @include reverse_breakpoint("large-pc") {
-                @include mg_rule(bottom,20px);
+                    @include mg_rule(bottom, 20px);
                 }
             }
+
             :nth-child(2) {
                 .icon::before {
                     content: "\f095";
                     padding: 0 14px;
                 }
             }
+
             :nth-child(3) {
                 .icon::before {
                     content: "\f013";
                     padding: 0 11px;
                 }
             }
+
             :nth-child(4) {
                 .icon::before {
                     content: "\f10b";
                     padding: 0 25px;
                 }
             }
+
             .icon-big-font {
-                font-size: map-get($font,font-xxvi);
-              }
-              
-              .icon-small-font {
-                  @include mg_rule(top,2px);
-                font-size: map-get($font,font-xv);
-              }
-              @include reverse_breakpoint("mini-pc") {
+                color: map-get($colors, black_color);
+                font-size: map-get($font, font-xxvi);
+                @include transition-effect();
+
+                &:hover {
+                    @include hover-effect();
+                }
+            }
+
+            .icon-small-font {
+                @include mg_rule(top, 2px);
+                color: map-get($colors, black_color);
+                font-size: map-get($font, font-xv);
+                @include transition-effect();
+
+                &:hover {
+                    @include hover-effect();
+                }
+            }
+
+            @include reverse_breakpoint("mini-pc") {
                 flex-basis: 40%;
-              }
-              @include reverse_breakpoint("tablet") {
+            }
+
+            @include reverse_breakpoint("tablet") {
                 flex-basis: 100%;
-              }
-          }
-          span {
+            }
+        }
+
+        span {
             display: block;
             text-align: center;
             letter-spacing: 1px;
-          }
-          @include reverse_breakpoint("large-pc") {
-              flex-wrap: wrap;
-          }
-          @include reverse_breakpoint("mini-pc") {
+        }
+
+        @include reverse_breakpoint("large-pc") {
+            flex-wrap: wrap;
+        }
+
+        @include reverse_breakpoint("mini-pc") {
             flex-wrap: wrap;
             justify-content: center;
             row-gap: 20px;
             column-gap: 10px;
-          }
+        }
     }
 }
