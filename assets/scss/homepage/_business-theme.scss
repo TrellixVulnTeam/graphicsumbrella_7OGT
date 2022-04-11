@@ -9,7 +9,7 @@
     }
     &__website-icons {
         @include mg_rule(top,29px);
-        border-top: 1px dotted map-get($colors,lighter-white);
+        border-top: 1px dashed map-get($colors,lighter-white);
         @include flex_properties(space-between,normal);
         text-align: center;
         &__elegantica-icon {

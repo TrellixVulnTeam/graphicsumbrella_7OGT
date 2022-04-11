@@ -67,7 +67,7 @@
         @at-root &__about-us {
             p {
                 margin: 15px 0 17px 0;
-                font-size: map-get($colors, font-xi);
+                font-size: map-get($font, font-xi);
                 line-height: 18px;
 
                 @include reverse_breakpoint("large-pc") {
@@ -97,6 +97,7 @@
                         &:hover:before {
                             @include hover-effect();
                         }
+                        @include transition-effect();
                     }
 
                     &:nth-child(2) a::before {
@@ -146,6 +147,7 @@
                         &:hover {
                             @include hover-effect();
                         }
+                        @include transition-effect();
                     }
 
                     :first-child {
@@ -182,6 +184,7 @@
                             @include mg_rule(right, 10px);
                             color: map-get($colors, faint-gray);
                         }
+                        @include transition-effect();
                     }
 
                     &:nth-child(2) {

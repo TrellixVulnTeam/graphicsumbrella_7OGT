@@ -44,6 +44,7 @@
                     &:hover {
                         @include hover-effect();
                     }
+                    @include transition-effect();
                 }
 
                 p {

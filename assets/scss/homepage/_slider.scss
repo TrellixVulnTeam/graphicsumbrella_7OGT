@@ -4,8 +4,14 @@
     .wrapper {
         width: 85.3%;
     }
+
+    .slick-current {
+        position: relative;
+    }
+    
     figure {
-        width: 534px;
+        width: 566px;
+        height: 332px;
         @include mg_rule(left,13.9%);
         @include reverse_breakpoint("mini-ipad") {
             @include mg_rule(left,0);
@@ -42,11 +48,21 @@
         position: relative;
       }
       @at-root
-      .slick-prev::before,.slick-next::before {
-        font-size: map-get($font,font-lviii);
+      .slick-prev {
+          z-index: 1;
+          top: 43.3%;
+          left: -1.8%;
+          &::before {
+            font-size: map-get($font,font-lviii);
+          }
       }
       @at-root
       .slick-next {
-        right: 17px;
+          z-index: 1;
+          top: 43.3%;
+          right: 1.3%;
+          &::before {
+            font-size: map-get($font,font-lviii);
+          }
       }
 }

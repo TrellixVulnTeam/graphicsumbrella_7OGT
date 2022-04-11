@@ -7,87 +7,13 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -96,17 +22,8 @@ video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 /* Force scrollbar */
@@ -173,14 +90,29 @@ a {
   display: inline-block;
   text-decoration: none; }
 
+a:hover {
+  color: #ff0000;
+  transition: All ease-in-out 0.3s;
+  -webkit-transition: All ease-in-out 0.3s;
+  -moz-transition: All ease-in-out 0.3s;
+  -ms-transition: All ease-in-out 0.3s;
+  -o-transition: All ease-in-out 0.3s; }
+
 li {
   display: inline-block;
   list-style-type: none; }
 
+/* for fonts  */
+.dark-text {
+  font-weight: bold; }
+
+.green-color {
+  color: #8EB53E; }
+
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 87.1%;
+  max-width: 1519px;
+  width: 88%;
   margin: 0 auto; }
 
 header .wrapper {
@@ -255,8 +187,11 @@ header .wrapper {
   background-color: #A0C63F; }
   .slider .wrapper {
     width: 85.3%; }
+  .slider .slick-current {
+    position: relative; }
   .slider figure {
-    width: 534px;
+    width: 566px;
+    height: 332px;
     margin-left: 13.9%; }
     @media screen and (max-width: 995px) {
       .slider figure {
@@ -286,10 +221,18 @@ header .wrapper {
     width: 1257px;
     margin-left: 39px;
     position: relative; }
-  .slick-prev::before, .slick-next::before {
-    font-size: 58px; }
+  .slick-prev {
+    z-index: 1;
+    top: 43.3%;
+    left: -1.8%; }
+    .slick-prev::before {
+      font-size: 58px; }
   .slick-next {
-    right: 17px; }
+    z-index: 1;
+    top: 43.3%;
+    right: 1.3%; }
+    .slick-next::before {
+      font-size: 58px; }
 
 .business-theme .wrapper {
   width: 61.8%;
@@ -300,7 +243,7 @@ header .wrapper {
 
 .business-theme__website-icons {
   margin-top: 29px;
-  border-top: 1px dotted #CCCCCC;
+  border-top: 1px dashed #CCCCCC;
   display: flex;
   justify-content: space-between;
   align-items: normal;
@@ -468,6 +411,7 @@ header .wrapper {
         flex-basis: 100%; } }
   .advertisers-and-contact__about-contact__about-us p {
     margin: 15px 0 17px 0;
+    font-size: 11px;
     line-height: 18px; }
     @media screen and (max-width: 1440px) {
       .advertisers-and-contact__about-contact__about-us p {
@@ -598,3 +542,47 @@ header .wrapper {
       justify-content: center;
       row-gap: 20px;
       column-gap: 10px; } }
+
+footer {
+  padding: 3px 0;
+  background-color: #000;
+  color: #fff; }
+  footer .wrapper {
+    width: 57.2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      footer .wrapper {
+        display: flex;
+        justify-content: normal;
+        align-items: normal;
+        flex-direction: column;
+        row-gap: 10px; } }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    flex-basis: 26.6%; }
+    footer ul li a {
+      color: #fff;
+      font-size: 10px;
+      opacity: 0.8;
+      letter-spacing: 1px; }
+      footer ul li a:hover {
+        color: #ff0000; }
+    @media screen and (max-width: 1440px) {
+      footer ul {
+        flex-basis: 40%; } }
+    @media screen and (max-width: 995px) {
+      footer ul {
+        flex-basis: 50%; } }
+    @media screen and (max-width: 768px) {
+      footer ul {
+        width: 100%; } }
+  .copyrights {
+    flex-basis: 14.2%;
+    font-size: 9px;
+    white-space: nowrap; }
+    .copyrights__copyright-symbol {
+      opacity: 0.8; }

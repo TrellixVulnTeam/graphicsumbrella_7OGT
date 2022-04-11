@@ -36,6 +36,7 @@ header {
                 &:hover {
                     @include hover-effect();
                 }
+                @include transition-effect();
                }
                @include reverse_breakpoint("mini-ipad") {
                 text-align: center;
