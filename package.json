@@ -1,0 +1,26 @@
+{
+  "name": "graphics",
+  "version": "1.0.0",
+  "description": "graphics in sass",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass assets/scss/homepage/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabh-gaonkar/graphicsumbrella.git"
+  },
+  "keywords": [
+    "grapgics",
+    "sass"
+  ],
+  "author": "saurabh g",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurabh-gaonkar/graphicsumbrella/issues"
+  },
+  "homepage": "https://github.com/saurabh-gaonkar/graphicsumbrella#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
