@@ -35,7 +35,7 @@
                     font-size: map-get($font, font-xiv);
                 }
 
-                a {
+               & > a {
                     padding: 2px 11px;
                     background-color: map-get($colors, faint-green);
                     color: map-get($colors, primary_color);

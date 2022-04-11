@@ -207,6 +207,7 @@ li {
 /* for fonts  */
 
 .dark-text {
+    color: map-get($colors,black_color);
     font-weight: bold;
 }
 
