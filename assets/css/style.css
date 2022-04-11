@@ -200,5 +200,52 @@ header .wrapper {
       font-size: 16px;
       text-indent: 0;
       color: #000; }
+    @media screen and (max-width: 768px) {
+      .hamburger, .cross {
+        display: block;
+        align-self: flex-start; } }
   .cross::before {
     content: "\f00d"; }
+  .menus {
+    margin-left: auto;
+    flex-basis: 47.7%; }
+    .menus ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: normal; }
+      .menus ul li a {
+        color: #000;
+        font-size: 11px; }
+        .menus ul li a:hover {
+          color: #ff0000; }
+      @media screen and (max-width: 995px) {
+        .menus ul li {
+          text-align: center; } }
+      @media screen and (max-width: 768px) {
+        .menus ul {
+          flex-direction: column;
+          row-gap: 20px; } }
+    @media screen and (max-width: 995px) {
+      .menus {
+        width: 100%;
+        padding: 10px 0;
+        margin-left: 0; } }
+    @media screen and (max-width: 768px) {
+      .menus {
+        display: none;
+        background-color: #8EB53E; } }
+  .pull-me {
+    position: absolute;
+    right: 0;
+    top: -7px;
+    font-size: 9px; }
+    .pull-me::after {
+      content: "";
+      font-family: "fontAwesome";
+      font-size: 19px;
+      margin-left: 8px;
+      color: #A0C63F;
+      cursor: pointer; }
+  @media screen and (max-width: 995px) {
+    header .wrapper {
+      width: 80%; } }

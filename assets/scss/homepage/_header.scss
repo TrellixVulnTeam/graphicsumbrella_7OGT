@@ -14,10 +14,63 @@ header {
             @include font-icon("\f0c9",16px);
             color: #000;
         }
+        @include reverse_breakpoint("tablet") {
+            display: block;
+            align-self: flex-start;
+        }
     }
     @at-root
     .cross::before {
         content: "\f00d";
     }
+    @at-root
+    .menus {
+        @include mg_rule(left,auto);
+        flex-basis: 47.7%;
+         ul {
+           @include flex_properties(space-between,normal);
+           li {
+               a {
+                color: #000;
+                font-size: map-get($font,font-xi);
+                &:hover {
+                    @include hover-effect();
+                }
+               }
+               @include reverse_breakpoint("mini-ipad") {
+                text-align: center;
+            }
+           }
+           @include reverse_breakpoint("tablet") {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+          }
+          @include reverse_breakpoint("mini-ipad") {
+            width: 100%;
+            padding: 10px 0;
+            @include mg_rule(left,0);
+        }
+        @include reverse_breakpoint("tablet") {
+            display: none;
+            background-color: #8EB53E;
+        }
+      }
+      @at-root
+      .pull-me {
+        position: absolute;
+        right: 0;
+        top: -7px;
+        font-size: map-get($font,font-ix);
+        &::after {
+            @include font-iconafter("\f02e",19px);
+            @include mg_rule(left,8px);
+            color:map-get($colors,greenish-color);
+            cursor: pointer;
+        }
+      }
+      @include reverse_breakpoint("mini-ipad") {
+          width: 80%;
+      }
     }
 }
